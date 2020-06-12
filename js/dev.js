@@ -1,0 +1,1 @@
+LibreIcons.urlBase = 'http://localhost:8000/';
