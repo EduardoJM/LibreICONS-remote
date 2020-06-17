@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- if libre is included, disable the autoload icons -->
+    <meta name="libre:autoload" value="false" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LibreICONS | {{ page.title }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/EduardoJM/LibreICONS-remote@master/css/libre.css" />
+    <link rel="stylesheet" href="./assets/css/finder.css" />
+</head>
+<body>
+    <aside id="sidebar">
+        <i class="libre" data-icon="brand-google"></i>
+    </aside>
+
+    <main id="icon-finder">
+        <div id="search-box">
+            <input type="text" id="search-input" placeholder="Search an icon..." />
+        </div>
+        <div id="icon-viewer">
+            <p class="icon-observation"><b>Observation: </b>This page don't use the remote LibreICONS loading method because it causes some glitches in the client-side processing, because we have 2107 icons requests, but in an common page with icons, the load is good.</p>
+
+            {{ content }}
+        </div>
+    </main>
+
+    <div class="modal modal-close" id="icon-modal">
+        <div class="modal-content">
+            <div class="modal-title">
+                <h2 id="icon-modal-name"></h2>
+            </div>
+            <div id="icon-modal-preview" class="modal-icon-row">
+            </div>
+            <div class="code-area">
+                <input id="modal-code-input" type="text" value="" readonly />
+                <button type="button" id="btn-modal-copy-code">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/EduardoJM/LibreICONS-remote@master/js/libre.js"></script>
+    <script src="./assets/js/finder.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            LibreIcons.updateIcons(document.getElementById('sidebar'));
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    background: #FFF;
+}
+#sidebar {
+    width: 300px;
+    background: #EEE;
+}
+#icon-finder {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    background: #FFF;
+}
+#icon-finder #search-box {
+    padding: 10px;
+    background-color: #FFF;
+    border-bottom: 1px solid #EEE;
+}
+#icon-finder #search-box input[type=text] {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: #FFF;
+    color: #222;
+}
+#icon-finder #icon-viewer {
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 10px;
+}
+#icon-finder #icon-viewer .icon-list {
+    margin: 20px 0;
+}
+#icon-finder #icon-viewer .icon-list ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 16px;
+}
+#icon-finder #icon-viewer .icon-list ul li {
+    background: #CCC;
+    width: 74px;
+    height: 74px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#icon-finder #icon-viewer .icon-list ul li i.libre {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#icon-finder #icon-viewer .icon-list ul li i.libre svg {
+    width: 64px !important;
+    height: 64px !important;
+}
+
+#icon-finder .icon-observation {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 500;
+    cursor: pointer;
+    display: none;
+}
+
+.modal .modal-content {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 400px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 550;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    cursor: default;
+}
+.modal .modal-content .modal-title {
+    border-bottom: 1px solid #EEE;
+    padding: 10px;
+}
+.modal .modal-content .modal-title h2 {
+    text-align: center;
+    color: #222;
+    font-weight: normal;
+}
+.modal .modal-content .modal-icon-row {
+    flex: 1;
+    padding: 10px;
+}
+.modal .modal-content .modal-icon-row i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal .modal-content .modal-icon-row i svg{
+    width: 170px;
+    height: 170px;
+}
+.modal .modal-content .code-area {
+    padding: 20px 10px;
+    border-top: 1px solid #EEE;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.modal .modal-content .code-area input[type=text] {
+    flex: 1;
+    padding: 8px 0;
+    border: none;
+    background: #EEE;
+    color: #222;
+}
+.modal .modal-content .code-area button {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    border: none;
+    background: #DDD;
+    padding: 5px;
+    cursor: pointer;
+}
