@@ -1,10 +1,9 @@
 {
-  "name": "LibreICONS-CDN",
+  "name": "LibreICONS-remote",
   "version": "1.0.0",
   "description": "",
   "main": "libre.js",
   "scripts": {
-    "dev": "php -S localhost:8000",
     "data": "node utils/data-provider.js"
   },
   "keywords": [],

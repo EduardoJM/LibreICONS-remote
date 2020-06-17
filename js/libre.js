@@ -2,7 +2,7 @@ var LibreIcons = {
     /**
      * Base url for the CDN.
      */
-    urlBase: 'https://cdn.jsdelivr.net/gh/DiemenDesign/LibreICONS@latest/',
+    urlBase: 'https://cdn.jsdelivr.net/gh/DiemenDesign/LibreICONS@master/',
     /**
      * SVG Icon for an unknown icon.
      */
