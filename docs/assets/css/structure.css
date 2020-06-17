@@ -11,6 +11,8 @@ body {
     align-items: stretch;
     justify-content: flex-start;
     background: #FFF;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
 }
 #sidebar {
     width: 300px;
