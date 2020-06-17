@@ -22,7 +22,7 @@ The usage of this toolkit is very simple. The first step is to include the **CSS
 </html>
 ```
 
-And, now, use the **i.libre** html tag to add the icon.
+And, now, use the `i.libre` html tag to add the icon.
 
 ```html
 <i class="libre" data-icon="{ICON NAME}"></i>
@@ -32,4 +32,12 @@ An usage example is, to add the google brand icon in the page:
 
 ```html
 <i class="libre" data-icon="brand-google"></i>
+```
+
+### Color icons
+
+For the color icons, an new html attribute is needed. Add the `data-color="true"` attribute to the `i.libre` tag. See the example:
+
+```html
+<i class="libre" data-icon="gui-binoculars" data-color="true"></i>
 ```
