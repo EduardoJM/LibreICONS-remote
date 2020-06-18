@@ -5,9 +5,11 @@ title: Home
 
 <h1>LibreICONS</h1>
 
+<p>This is an small JavaScript toolkit for request the LibreICONS at runtime. See the <a href="https://github.com/DiemenDesign/LibreICONS" target="_blank">LibreICONS</a> repository.</p>
+
 <h2>Usage</h2>
 
-<p>The usage of this toolkit is very simple. The first step is include the <b>CSS</b> and the <b>JavaScritp</b> of this tool:</p>
+<p>The usage of this toolkit is very simple. The first step is include the <b>CSS</b> and the <b>JavaScript</b> of this tool:</p>
 
 <pre><code class="language-markup">&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -39,6 +41,10 @@ title: Home
 
 <h2>Icons</h2>
 
-<p>All the icons in the <code>master</code> branch in the repository of LibreICONS are disponible by using this small tool. An list of this icons with an search bar is disponible in <a href="./icons.html">Icons Page</a>.</p>
+<p>All the icons in the <code>master</code> branch (<code>svg</code> and <code>svg-color</code> folders) in the repository of LibreICONS is supported for this tool by using this small tool. An list of this icons with an search bar is disponible in <a href="./icons.html">Icons Page</a>.</p>
 
-<p style="color: red;">THIS PAGE IS UNDER CONSTRUCTION!</p>
+<h2>Auto initialization</h2>
+
+<p>In the default, all <code>&lt;i class="libre" (...)&gt;&lt;/i&gt;</code> html tag is processed and the <code>data-icon</code> is requested from the repository in the <code>DOMContentLoaded</code> event. In some cases, like the icon finder, the auto load is not an good performatic, and, to disable the auto load, add the meta tag in the header of the document:</p>
+
+<pre><code class="language-markup">&lt;meta name="libre:autoload" value="false" /&gt;</code></pre>

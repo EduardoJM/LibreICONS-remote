@@ -14,7 +14,40 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #222;
 }
+body a {
+    color: #039be5;
+    text-decoration: none;
+}
 #sidebar {
     width: 300px;
     background: #EEE;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#sidebar ul {
+    list-style-type: none;
+}
+#sidebar ul li a {
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 20px;
+    color: #222;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    transition: .3s ease;
+}
+#sidebar ul li a:hover{
+    color: #AAA;
+}
+#sidebar ul li a i.libre,
+#sidebar ul li a i.libre svg {
+    width: 24px !important;
+    height: 24px !important;
+}
+#sidebar ul li a i.libre {
+    margin-right: 10px;
 }
